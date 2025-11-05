@@ -1,0 +1,27 @@
+{
+  "name": "Invitation",
+  "type": "object",
+  "properties": {
+    "funeral_id": {
+      "type": "string"
+    },
+    "template": {
+      "type": "string",
+      "enum": [
+        "classic",
+        "modern",
+        "floral"
+      ],
+      "default": "classic"
+    },
+    "custom_message": {
+      "type": "string"
+    },
+    "event_details": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "funeral_id"
+  ]
+}

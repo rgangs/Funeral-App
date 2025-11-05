@@ -1,0 +1,49 @@
+{
+  "name": "FuneralDetails",
+  "type": "object",
+  "properties": {
+    "deceased_name": {
+      "type": "string",
+      "description": "Name of the deceased"
+    },
+    "deceased_photo_url": {
+      "type": "string",
+      "description": "Photo of the deceased"
+    },
+    "birth_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "death_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "funeral_type": {
+      "type": "string",
+      "enum": [
+        "catholic",
+        "humanist",
+        "other"
+      ],
+      "description": "Type of funeral service"
+    },
+    "funeral_date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "funeral_location": {
+      "type": "string"
+    },
+    "obituary": {
+      "type": "string",
+      "description": "Memorial text or obituary"
+    },
+    "relationship": {
+      "type": "string",
+      "description": "Relationship to the deceased"
+    }
+  },
+  "required": [
+    "deceased_name"
+  ]
+}

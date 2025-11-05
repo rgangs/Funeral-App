@@ -1,0 +1,50 @@
+{
+  "name": "ChecklistItem",
+  "type": "object",
+  "properties": {
+    "funeral_id": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "funeral",
+        "wake",
+        "memorial"
+      ],
+      "description": "Which event this task belongs to"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "completed": {
+      "type": "boolean",
+      "default": false
+    },
+    "assigned_to": {
+      "type": "string",
+      "description": "Email of assigned person"
+    },
+    "due_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "default": "medium"
+    }
+  },
+  "required": [
+    "funeral_id",
+    "category",
+    "title"
+  ]
+}

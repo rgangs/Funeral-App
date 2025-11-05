@@ -1,0 +1,22 @@
+{
+  "name": "Photo",
+  "type": "object",
+  "properties": {
+    "funeral_id": {
+      "type": "string"
+    },
+    "photo_url": {
+      "type": "string"
+    },
+    "caption": {
+      "type": "string"
+    },
+    "uploaded_by": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "funeral_id",
+    "photo_url"
+  ]
+}

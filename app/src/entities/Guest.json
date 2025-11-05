@@ -1,0 +1,41 @@
+{
+  "name": "Guest",
+  "type": "object",
+  "properties": {
+    "funeral_id": {
+      "type": "string",
+      "description": "Reference to funeral"
+    },
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "is_inner_circle": {
+      "type": "boolean",
+      "default": false,
+      "description": "Part of coordination team"
+    },
+    "invitation_sent": {
+      "type": "boolean",
+      "default": false
+    },
+    "rsvp_status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "attending",
+        "not_attending"
+      ],
+      "default": "pending"
+    }
+  },
+  "required": [
+    "funeral_id",
+    "name"
+  ]
+}

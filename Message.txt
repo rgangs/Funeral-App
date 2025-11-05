@@ -1,0 +1,27 @@
+{
+  "name": "Message",
+  "type": "object",
+  "properties": {
+    "funeral_id": {
+      "type": "string"
+    },
+    "sender_email": {
+      "type": "string"
+    },
+    "sender_name": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "funeral_id",
+    "sender_email",
+    "content"
+  ]
+}
